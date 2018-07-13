@@ -16,7 +16,7 @@ contract Inbox {
     }*/
     
     
-    function doMath(int a, int b){
+    function doMath(int a, int b) public {
         a + b;
         b - a;
         a * b;

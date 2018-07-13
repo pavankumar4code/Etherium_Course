@@ -4,33 +4,12 @@ const Web3 = require('web3');
 
 const web3 = new Web3(ganache.provider());
 
-/* Example test scripts */
-/*
-let car;
+beforeEach(() => {
+	//Get list of all accounts
 
-class Car{
-	park() {
-		return 'stopped';
-	}
+	// Use one of those accounts to deploy the contract
 
-	drive(){
-		return 'vroom';
-	}
-}
-
-
-beforeEach( () => { 
-	car = new Car();
+	web3.eth.getAccounts()
 });
-
-describe('Car Class test', () =>{
-	it('Should Park return a string', () => { 
-		assert.equal(car.park(), 'stopped');
-	});	
-	it('It can drive', () => { 
-		assert.equal(car.drive(), 'vroom');
-	});	
-});*/
-
 
 
